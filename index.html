@@ -10,7 +10,7 @@
   <body class="light">
     <div class="switcher">
       <img src="assets/moon.svg" alt="moon icon">
-      <div class="ball"></div>
+      <div class="ball off"></div>
       <img src="assets/sun.svg" alt="sun icon">
     </div>
   </body>
@@ -20,7 +20,9 @@
 
     ball.addEventListener('click', () => {
       body.classList.toggle('light');
+      ball.classList.toggle('off');
       body.classList.toggle('dark');
+      ball.classList.toggle('on');
     });
   </script>
 </html>
