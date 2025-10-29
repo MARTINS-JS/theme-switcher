@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Theme Switcher</title>
   </head>
-  <body>
+  <body class="light">
     <div class="switcher">
       <img src="assets/moon.svg" alt="moon icon">
       <div class="ball"></div>
@@ -15,6 +15,12 @@
     </div>
   </body>
   <script>
-    
+    const body = document.querySelector('body');
+    const ball = document.querySelector('.ball');
+
+    ball.addEventListener('click', () => {
+      body.classList.toggle('light');
+      body.classList.toggle('dark');
+    });
   </script>
 </html>
