@@ -10,3 +10,18 @@ body {
   display: flex;
   height: 100vh;
 }
+
+.switcher {
+  align-items: center;
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  height: 100px;
+}
+
+.switcher img {
+  height: 86px;
+  width: 86px;
+}
