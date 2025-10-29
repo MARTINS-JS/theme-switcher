@@ -18,10 +18,20 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 8px 12px;
+  position: relative;
   height: 100px;
+  width: 235px;
 }
 
-.switcher img {
+.switcher img,
+.switcher .ball {
   height: 86px;
   width: 86px;
+}
+
+.switcher .ball {
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
 }
